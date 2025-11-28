@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Spotify</title>
+    <link rel="stylesheet" href="css/support.css" />
+    <script src="js/support.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">♫</div>
+                Spotify
+            </div>
+            <a href="#" class="header-link">Explore Premium</a>
+            <a href="#" class="header-link">Install App</a>
+        </div>
+        <div class="header-right">
+            <button class="language-btn">🌐</button>
+            <button class="signup-btn">Sign up</button>
+            <button class="login-btn">Log in</button>
+        </div>
+    </div>
+
+    <div style="padding: 0 40px;">
+        <div class="ai-banner">
+            <div class="ai-content">
+                <div class="ai-icon">✨</div>
+                <div class="ai-text">
+                    <h3>Get answers with AI <span class="beta-badge">BETA</span></h3>
+                    <p>Ask a question or describe your issue to get instant help.</p>
+                </div>
+            </div>
+            <button class="ai-btn" onclick="openAI()">Let's go</button>
+        </div>
+        <p class="ai-disclaimer">You're engaging with an AI-powered tool.</p>
+    </div>
+
+    <div class="search-section">
+        <h2 class="search-title">Search help articles</h2>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-box" placeholder="Search" id="searchInput">
+        </div>
+    </div>
+
+    <div class="categories-section">
+        <div class="category-item" onclick="openCategory('payments')">
+            <div class="category-content">
+                <span class="category-icon">💳</span>
+                <span class="category-name">Payments & billing</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="category-item" onclick="openCategory('account')">
+            <div class="category-content">
+                <span class="category-icon">👤</span>
+                <span class="category-name">Manage your account</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="category-item" onclick="openCategory('premium')">
+            <div class="category-content">
+                <span class="category-icon">💎</span>
+                <span class="category-name">Premium plans</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="category-item" onclick="openCategory('features')">
+            <div class="category-content">
+                <span class="category-icon">⚙️</span>
+                <span class="category-name">In-app features</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="category-item" onclick="openCategory('devices')">
+            <div class="category-content">
+                <span class="category-icon">📱</span>
+                <span class="category-name">Devices & troubleshooting</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="category-item" onclick="openCategory('safety')">
+            <div class="category-content">
+                <span class="category-icon">🔒</span>
+                <span class="category-name">Safety & privacy</span>
+            </div>
+            <span class="category-arrow">›</span>
+        </div>
+    </div>
+
+    <div class="quick-help-section">
+        <h2 class="quick-help-title">Quick help</h2>
+        <div class="help-item" onclick="openHelp('login')">
+            <span>Can't log in to Spotify</span>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="help-item" onclick="openHelp('payment')">
+            <span>Failed payment help</span>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="help-item" onclick="openHelp('charged')">
+            <span>Charged too much</span>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="help-item" onclick="openHelp('family')">
+            <span>Invite or remove Family plan members</span>
+            <span class="category-arrow">›</span>
+        </div>
+        <div class="help-item" onclick="openHelp('payment-details')">
+            <span>How to change your payment details</span>
+            <span class="category-arrow">›</span>
+        </div>
+    </div>
+
+    <div class="community-section">
+        <h2 class="community-title">Visit our Community</h2>
+        <p class="community-description">Have questions? Find answers in the Spotify Community!</p>
+        <button class="community-btn" onclick="goToCommunity()">Community</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>COMPANY</h4>
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Jobs</a>
+                <a href="#" class="footer-link">For the Record</a>
+            </div>
+            <div class="footer-column">
+                <h4>COMMUNITIES</h4>
+                <a href="#" class="footer-link">For Artists</a>
+                <a href="#" class="footer-link">Developers</a>
+                <a href="#" class="footer-link">Advertising</a>
+                <a href="#" class="footer-link">Investors</a>
+                <a href="#" class="footer-link">Vendors</a>
+            </div>
+            <div class="footer-column">
+                <h4>USEFUL LINKS</h4>
+                <a href="#" class="footer-link">Support</a>
+                <a href="#" class="footer-link">Web Player</a>
+                <a href="#" class="footer-link">Free Mobile App</a>
+                <a href="#" class="footer-link">Contact Spotify</a>
+            </div>
+            <div class="footer-column">
+                <h4>SPOTIFY PLANS</h4>
+                <a href="#" class="footer-link">Premium Individual</a>
+                <a href="#" class="footer-link">Premium Duo</a>
+                <a href="#" class="footer-link">Premium Family</a>
+                <a href="#" class="footer-link">Premium Student</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#" class="footer-legal-link">Legal</a>
+                <a href="#" class="footer-legal-link">Safety & Privacy Center</a>
+                <a href="#" class="footer-legal-link">Privacy Policy</a>
+                <a href="#" class="footer-legal-link">Cookies</a>
+                <a href="#" class="footer-legal-link">About Ads</a>
+                <a href="#" class="footer-legal-link">Accessibility</a>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <div class="social-icon">📷</div>
+                    <div class="social-icon">𝕏</div>
+                    <div class="social-icon">f</div>
+                </div>
+                <div class="language-selector">
+                    🌐 India (English)
+                </div>
+                <p class="copyright">© 2025 Spotify AB</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

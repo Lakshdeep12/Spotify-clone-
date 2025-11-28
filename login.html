@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <svg viewBox="0 0 1134 340" fill="white">
+                <path
+                    d="M567 0c-113.5 0-205 91.5-205 205s91.5 205 205 205 205-91.5 205-205S680.5 0 567 0zm94.1 295.4c-3.8 0-6.3-1.3-9.5-3.8-50.7-31-114.5-47.8-179.4-47.8-35.4 0-70.8 5.7-103.8 15.8-4.4 1.3-7 1.9-10.1 1.9-11.4 0-19.6-8.9-19.6-19.6 0-10.1 5.7-17.1 14.6-19.6 40.5-12.7 80.4-19 119.7-19 72.2 0 143.1 17.7 199.7 51.4 8.3 5.1 12 12 12 20.3 0 10.8-8.9 19.4-19.6 19.4zm27.8-63.3c-5.1 0-8.3-1.9-12-4.4-57-34.8-135.4-55.1-213.1-55.1-42.8 0-80.4 7-112.7 17.7-4.4 1.3-8.3 2.5-12 2.5-13.9 0-24.1-10.8-24.1-25.3 0-13.3 7-21.5 17.7-25.3 40.5-14 84.8-21.5 131-21.5 88.6 0 172.8 22.8 238 64.6 9.5 6.3 13.9 14.6 13.9 25.3 0 13.9-11.4 24.7-26.7 24.7zM703.3 158c-5.7 0-10.1-1.9-15.2-5.1-63.9-38-152.5-60.8-238-60.8-49.4 0-94.1 7.6-130.4 19.6-5.1 1.9-10.1 3.2-15.2 3.2-16.5 0-29.7-13.3-29.7-30.4 0-15.8 8.9-26 23.4-30.4 42.8-15.2 93.5-23.4 151.2-23.4 96.2 0 194.9 24.1 265.8 67.1 10.8 6.3 17.1 16.5 17.1 30.4 0 16.5-13.3 29.7-29.7 29.7z" />
+            </svg>
+        </div>
+
+        <h1>Log in to Spotify</h1>
+
+        <div class="form-group">
+            <label class="form-label" for="loginInput">Email or username</label>
+            <input type="text" class="form-input" id="loginInput" placeholder="Email or username">
+        </div>
+
+        <button class="continue-btn" onclick="handleContinue()">Continue</button>
+
+        <div class="divider">
+            <span>or</span>
+        </div>
+
+        <button class="social-btn" onclick="continueWithPhone()">
+            <div class="phone-icon"></div>
+            Continue with phone number
+        </button>
+
+        <button class="social-btn" onclick="continueWithGoogle()">
+            <div class="google-icon"></div>
+            Continue with Google
+        </button>
+
+        <button class="social-btn" onclick="continueWithFacebook()">
+            <div class="facebook-icon"></div>
+            Continue with Facebook
+        </button>
+
+        <button class="social-btn" onclick="continueWithApple()">
+            <div class="apple-icon"></div>
+            Continue with Apple
+        </button>
+
+        <div class="signup-section">
+            <p class="signup-text">
+                Don't have an account? <a class="signup-link" href="sign-up.html">Sign up for Spotify</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/login.js" defer></script>

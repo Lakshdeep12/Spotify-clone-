@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="100%" height="100%" fill="#1db954"/>
+  <circle cx="200" cy="200" r="120" fill="#0f0f0f" opacity="0.12" />
+  <text x="50%" y="55%" text-anchor="middle" font-family="Arial" font-size="36" fill="#fff">Sunrise Drive</text>
+</svg>

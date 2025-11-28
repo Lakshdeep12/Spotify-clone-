@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="100%" height="100%" fill="#ff7b7b"/>
+  <circle cx="300" cy="300" r="140" fill="#fff" opacity="0.06" />
+  <text x="50%" y="55%" text-anchor="middle" font-family="Arial" font-size="36" fill="#111">Midnight Loop</text>
+</svg>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta
+      name="description"
+      content="Offline Spotify-like demo built with HTML, CSS and JavaScript"
+    />
+    <script src="js/script1.js" defer></script>
+    <title>Spotify Clone</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+        <div class="home-icon"></div>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="What do you want to play?" />
+        </div>
+      </div>
+      <div class="header-right">
+        <a class="header-link">Premium</a>
+        <a href="support.html" class="header-link">Support</a>
+        <a href="download.html" class="header-link">Download</a>
+        <span class="header-link">|</span>
+        <a class="header-link">Install App</a>
+        <a href="sign-up.html"><button class="btn-signup">Sign up</button></a>
+        <a href="login.html"><button class="btn-login">Log in</button></a>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Your Library</h3>
+          <button class="create-playlist-btn">
+            <span style="font-size: 20px;">+</span> Create your first playlist<br />
+            <small class="muted">It's easy, we'll help you</small>
+          </button>
+          <button class="create-playlist-btn last">Create playlist</button>
+        </div>
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Let's find some podcasts to follow</h3>
+          <p class="muted note">We'll keep you updated on new episodes</p>
+          <button class="browse-btn">Browse Podcasts</button>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="section-header">
+          <h2 class="section-title">Trending songs</h2>
+          <span class="show-all">Show all</span>
+        </div>
+
+        <div class="cards-container" id="trendingSongs"></div>
+
+        <div class="section-header">
+          <h2 class="section-title">Popular artists</h2>
+          <span class="show-all">Show all</span>
+        </div>
+
+        <div class="artist-cards" id="popularArtists"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <div class="footer-text">Preview of Spotify</div>
+        <small class="muted">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</small>
+      </div>
+      <button class="footer-btn">Sign up free</button>
+    </div>
+  </body>
+</html>
